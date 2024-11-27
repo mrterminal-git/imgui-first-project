@@ -25,7 +25,7 @@ include(ConfigSafeGuards)
 
 # set (VCPKG_DIR ${CMAKE_SOURCE_DIR}/external/vcpkg)
 # you can set any other vcpkg installation on your system
-set (VCPKG_DIR ${CMAKE_SOURCE_DIR}/../../../../../vcpkg)
+set (VCPKG_DIR "/mnt/c/Users/Volter/Documents/LEARN IMGUI/vcpkg")
 include(${VCPKG_DIR}/scripts/buildsystems/vcpkg.cmake)
 
 find_package(fmt CONFIG REQUIRED)
