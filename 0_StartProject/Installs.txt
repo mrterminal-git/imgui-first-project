@@ -1,0 +1,29 @@
+Windows
+
+Visual Studio 2022:
+
+https://visualstudio.microsoft.com/de/vs/
+
+Step 4 is important: https://learn.microsoft.com/en-us/cpp/build/vscpp-step-0-installation?view=msvc-170#step-4---choose-workloads
+
+CMake:
+
+https://cmake.org/download/
+
+Git:
+
+https://git-scm.com/downloads
+
+
+Linux
+
+sudo apt-get update
+sudo apt-get upgrade
+ 
+# Mandatory
+sudo apt-get install gcc g++ gdb
+sudo apt-get install make cmake
+sudo apt-get install git
+sudo apt-get install curl zip unzip tar
+sudo apt-get install pkg-config
+sudo apt install libxinerama-dev libxcursor-dev xorg-dev libglu1-mesa-dev
