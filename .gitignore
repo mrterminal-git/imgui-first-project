@@ -11,3 +11,8 @@
 1_FileExplorer_local/
 2_Plotter_local/
 4_EpitrendPlotter/
+
+################################
+###########  OTHER  ############
+################################
+Plotter/CMakeLists.txt
