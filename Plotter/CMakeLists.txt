@@ -23,7 +23,7 @@ include(ConfigSafeGuards)
 
 # add_clang_format_target() # needs python
 
-set (VCPKG_DIR "C:/Users/VolterE/Documents/vcpkg")
+set (VCPKG_DIR "C:/Users/Volter/Documents/LEARN IMGUI/vcpkg")
 # you can set any other vcpkg installation on your system
 # set (VCPKG_DIR ${CMAKE_SOURCE_DIR}/../../../../../vcpkg)
 include(${VCPKG_DIR}/scripts/buildsystems/vcpkg.cmake)
@@ -36,7 +36,10 @@ find_package(OpenGL REQUIRED)
 
 add_executable(${PROJECT_NAME}
     src/main.cpp
-    src/render.cpp
+    src/GraphView.cpp
+    src/AppController.cpp
+    src/DataManager.cpp
+    src/TimeSeriesBuffer.cpp
 )
 
 add_compile_definitions(NOMINMAX)

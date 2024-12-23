@@ -12,7 +12,8 @@
 #endif
 #include <GLFW/glfw3.h>
 
-#include "render.hpp"
+#include "GraphView.hpp"
+#include "AppController.hpp"
 
 #if defined(_MSC_VER) && (_MSC_VER >= 1900) &&                                 \
     !defined(IMGUI_DISABLE_WIN32_FUNCTIONS)
@@ -106,7 +107,7 @@ int main(int, char **)
     style.Colors[ImGuiCol_TableBorderStrong] = ImVec4(1.0, 1.0, 1.0, 1.0);
     style.Colors[ImGuiCol_TableBorderLight] = ImVec4(1.0, 1.0, 1.0, 1.0);
 
-    WindowClass window_obj;
+    AppController appController;
 
     while (!glfwWindowShouldClose(window))
     {
@@ -114,7 +115,7 @@ int main(int, char **)
 
         ImGui::NewFrame();
         ImPlot::CreateContext();
-        render(window_obj);
+        appController.run();
         ImGui::Render();
 
         end_cycle(window);
